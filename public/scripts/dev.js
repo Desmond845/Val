@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 async function loadData() {
   try {
     const response = await fetch(
-      `http://localhost:3000/api/dev/stats?password=${PASSWORD}`
+      `/api/dev/stats?password=${PASSWORD}`
     );
     // if (!response.ok) throw new Error('Failed to fetch');
     if (response.ok) {
