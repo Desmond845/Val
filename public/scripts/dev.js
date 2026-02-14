@@ -171,7 +171,7 @@ function updateUrlGrid(friends) {
 
     // Use friend.id (uniqueId) if available; fallback to name for demo
     const link = friend.id
-      ? `${window.location.origin}/friend/${friend.id}`
+      ? `${window.location.origin}/friends/${friend.id}`
       : `${window.location.origin}/friends/${encodeURIComponent(friend.name)}`;
 
     card.innerHTML = `
