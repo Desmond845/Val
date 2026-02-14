@@ -17,7 +17,14 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({ origin: "http://127.0.0.1:5500" }));
-app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+            "script-src-attr": ["'unsafe-inline'"],
+        },
+    },
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
