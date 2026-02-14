@@ -138,7 +138,7 @@ export const getDevStats = async (req, res, next) => {
       viewed: friend.viewed || false,
       viewCount: friend.viewCount || 0,
       lastViewed: friend.lastViewed || null,
-      firstViewed: friend.createdAt || null,
+      firstViewed: friend.firstViewed || null,
       devices: [], // Empty for now
     })),
   };
