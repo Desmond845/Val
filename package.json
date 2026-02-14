@@ -1,0 +1,25 @@
+{
+  "name": "val",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node  --watch  --env-file=.env server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^9.1.6",
+    "nodemailer": "^8.0.1"
+  },
+  "description": ""
+}

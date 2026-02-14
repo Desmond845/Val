@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You Only • Desmond's V-Day 💌</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <canvas id="confettiCanvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:9999;"></canvas>
+    <!-- Animated Background -->
+    <!-- <div class="hearts-bg">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div> -->
+<div class="hero-message">
+    <p>This is your personalized message from Desmond. It might be short and sweet, or it might scroll on for a while... who knows? </p>
+    <p>Just know that whatever I wrote here came from the heart. Thanks for being part of my world.</p>
+</div>
+
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Envelope Section -->
+        <section class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="envelope-front">
+
+                    <div class="seal" id="seal">
+                    <i class="fas fa-heart"></i>
+                </div>
+                    <div class="to-label">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>To: <span id="previewName">[Your Name]</span></h3>
+                    </div>
+                    <div class="flap-shine"></div>
+                </div>
+                
+                <!-- Letter Inside -->
+                <div class="letter" id="letter" tabindex="0">
+                    <div class="letter-header">
+                        <div class="letter-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>February 2026</span>
+                        </div>
+                        <div class="letter-watermark">DESMOND</div>
+                    </div>
+                    
+                    <div class="letter-content" id="letterContent">
+                        <!-- Message will be inserted here -->
+                        <div class="salutation">
+                            <h1>Hey <span id="friendName" class="highlight">Friend</span>,</h1>
+                        </div>
+                        <div id="messageText">
+                            <!-- Dynamic message goes here -->
+                            <p>This is your personalized message from Desmond. It might be short and sweet, or it might scroll on for a while... who knows? 😉</p>
+                            <p>Just know that whatever I wrote here came from the heart. Thanks for being part of my world.</p>
+                            
+                            <p class="poem">
+                                "In bits and bytes, I code my care,<br>
+                                A digital hug, just to share.<br>
+                                Though pixels fade and screens go dark,<br>
+                                This memory leaves a lasting spark."
+                            </p>
+                            <p>Remember: you're awesome. Don't let anyone tell you otherwise.</p>
+                            <p>With love (the platonic kind 😂),</p>
+                        </div>
+                        
+
+                    </div>
+                    
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-indicator" id="scrollIndicator">
+                        <div class="scroll-bar">
+                            <div class="scroll-progress" id="scrollProgress"></div>
+                        </div>
+                        <div class="scroll-hint">
+                            <i class="fas fa-chevron-down bounce"></i>
+                            <span>Keep scrolling, there's more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Button -->
+        <button class="open-btn" id="openBtn" aria-label="Open your Valentine Message">
+            <i class="fas fa-gift"></i>
+            <span>Open Your Message</span>
+            <div class="btn-sparkle"></div>
+        </button>
+
+        <div class="instructions">
+                <div class="instruction">
+                <div class="icon-circle">
+                    <i class="fas fa-hand-point-up"></i>
+                </div>
+                <p>Click the button above to open</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Made with <i class="fas fa-heart heartbeat"></i> by Desmond • 15 y/o Web Dev </p>
+        <p class="footer-note">This isn't just code — it's a feeling, converted to HTML/CSS/JS.</p>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
