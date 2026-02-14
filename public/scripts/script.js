@@ -26,6 +26,15 @@ const instructions = document.querySelector(".instructions");
 // State
 let isOpened = false;
 let scrollPercent = 0;
+ 
+function cleanName(name) {
+  return name
+    .replace(/[^a-zA-Z\s]/g, "") // remove symbols
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ") // collapse spaces
+    .replace(/\b\w/g, (c) => c.toUpperCase()); // capitalize first letter
+}
 
 // Get friend name from URL
 function getId() {
@@ -72,7 +81,7 @@ async function loadFriendMessage() {
 // Update page with friend's message
 function updatePageWithMessage(data) {
   // Update name (capitalize first letter)
-  const displayName = data.name.charAt(0).toUpperCase() + data.name.slice(1);
+  const displayName = cleanName(data.name)
   document.getElementById("previewName").textContent = displayName;
   document.getElementById("friendName").textContent = displayName;
 
